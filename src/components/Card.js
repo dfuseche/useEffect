@@ -8,10 +8,10 @@ export const Card = (props) => {
         <div class="card"  >
             <img src={imagen} class="card-img-top" alt="..."></img>
             <div class="card-body">
-                <p>Nombre: {title}</p>
-                <p>Genero: {genero}</p>
-                <p>Estado: {status}</p>
-                
+                <b> <h4>{title}</h4></b>
+                <p>Gender: {genero}</p>
+                <p>Status: {status}</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
         </div>
       );

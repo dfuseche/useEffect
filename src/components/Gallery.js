@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { Card } from './Card';
+import './Gallery.css'
 
 function Gallery() {
     // 2. Create our *dogImage* variable as well as the *setDogImage* function via useState
@@ -17,14 +18,15 @@ function Gallery() {
 
   return (
     <div >
-        <div className='container'>
-          {cardInfo.map((element) => (
-          <Card
-          title={element.name}
-          genero={element.gender}
-          status={element.status}
-          imagen={element.image}
-        />
+        <div className = 'container'>
+          {cardInfo.map((element) => ( 
+            <Card
+            title={element.name}
+            genero={element.gender}
+            status={element.status}
+            imagen={element.image}
+            />
+         
         ))}
       </div>
     </div>
